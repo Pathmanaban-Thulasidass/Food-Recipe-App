@@ -8,9 +8,11 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 
 @Composable
-fun RecipeApp(navController: NavHostController){
+fun RecipeApp(
+    navController: NavHostController
+){
 
-    val recipeViewModal:MainViewModal = viewModel()
+    val recipeViewModal : MainViewModal = viewModel()
     val viewState by recipeViewModal.categoriesState
 
     NavHost(
